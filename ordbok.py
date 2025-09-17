@@ -1,17 +1,21 @@
 
 
 
-# oppgave 2 - lage en funksjon som viser alle
-
-def vis_alle():
-    if not telefonbok:    #sjekker om listen er tom
-        print("telefonboka er tom.")
-
-    else:
-        print("\n--- telefonbok ---")
-        for person in telefonbok:    #går gjennom alle personer
-            print(f"{person['navn']}: {person['nummer']}")  #f-string
-            print("--------------\n")  #litt pynt + linjeskrift
 
 
 
+# oppgave 3 - lag en funksjon som legger til en ny person 
+
+def legg_til():
+    navn = input("skriv inn navn: ")
+    nummer = input("skriv inn nummer: ")
+    ny_person = {"navn":navn, "nummer": nummer}
+    telefonbok.append(ny_person)
+    print(f"{navn} ble lagt til i telefonboka.\n")
+
+
+
+
+
+          
+          

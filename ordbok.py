@@ -1,17 +1,17 @@
 
-# oppgave 1 - lage en liste med ordbøker
-
-telefonbok = []   #lager en tom liste for kontakter
 
 
-#lage to ordbøker med personer
-pers1 = {"navn": "Mikail Tirit", "nummer": "984 92 203"}
-pers2 = {"navn": "Anders Mikaelsen", "nummer": "900 123 454"}
+# oppgave 2 - lage en funksjon som viser alle
 
+def vis_alle():
+    if not telefonbok:    #sjekker om listen er tom
+        print("telefonboka er tom.")
 
+    else:
+        print("\n--- telefonbok ---")
+        for person in telefonbok:    #går gjennom alle personer
+            print(f"{person['navn']}: {person['nummer']}")  #f-string
+            print("--------------\n")  #litt pynt + linjeskrift
 
-#legger personene i lista med .append()
-telefonbok.append(pers1)
-telefonbok.append(pers2)
 
 
